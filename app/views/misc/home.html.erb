@@ -13,5 +13,34 @@
   // Write your JS here.
   // Open the JS console and refresh the page to see the output.
 
+
+  // Fizz Buzz solution
+  for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("fizzbuzz");
+  } else if (i % 3 === 0) {
+    console.log("fizz");
+  } else if (i % 5 === 0) {
+    console.log("buzz");
+  } else {
+    console.log(i);
+  }
+}
+// Javascript walk through
+const colors = {
+      south: "lightgreen",
+      east: "lightblue",
+      midwest: "lightyellow",
+      west: "lightcoral"
+    };
+
+    const cityList = document.getElementById("cities_list");
+    const cityItems = cityList.getElementsByTagName("li");
+
+    for (let i = 0; i < cityItems.length; i++) {
+      const city = cityItems[i];
+      const region = city.className;
+      city.style.backgroundColor = colors[region];
+    }
   
 </script>
